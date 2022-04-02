@@ -1,0 +1,8 @@
+import requests
+
+# HTTP GET
+get_api_url = "https://jsonplaceholder.typicode.com/todos/1"
+response = requests.get(get_api_url)
+print('\n')
+print('Status Code: ', response.status_code)
+print('response: ', response.json())
