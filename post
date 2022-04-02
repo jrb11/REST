@@ -1,0 +1,9 @@
+import requests
+
+# HTTP POST
+post_api_url = "https://jsonplaceholder.typicode.com/todos"
+todo = {"userId": 1, "title": "Buy Lassi", "completed": False}
+response = requests.post(post_api_url,json=todo)
+print('\n')
+print('Status Code: ', response.status_code)
+print('response: ', response.json())
